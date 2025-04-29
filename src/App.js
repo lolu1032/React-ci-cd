@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CI CD 되나요
+          CI CD 되나요33
         </p>
         <a
           className="App-link"
