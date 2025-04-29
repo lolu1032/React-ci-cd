@@ -28,12 +28,13 @@ jobs:
         context: .
         push: true
         tags: runcola/myapp:latest
-        
-    - name: Deploy to Debian Server via SSH
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-        host: ${{ secrets.SERVER_HOST }}
-        username: ${{ secrets.SERVER_USER }}
-        key: ${{ secrets.SERVER_SSH_KEY }}
-        script: |
-          docker pull runcola/myapp:latest
+
+    # 로컬 환경이라서 현재는 불가 나중에 도메인 사면 써보기        
+    # - name: Deploy to Debian Server via SSH
+    #   uses: appleboy/ssh-action@v1.0.0
+    #   with:
+    #     host: ${{ secrets.SERVER_HOST }}
+    #     username: ${{ secrets.SERVER_USER }}
+    #     key: ${{ secrets.SERVER_SSH_KEY }}
+    #     script: |
+    #       docker pull runcola/myapp:latest

@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          자동 pull 테스트1
+          안녕하세요 김찬찬
         </p>
         <a
           className="App-link"
